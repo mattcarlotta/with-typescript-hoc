@@ -1,10 +1,10 @@
 import { createContext, useCallback, useContext, useState } from "react";
 import type { FC, ReactNode } from "react";
 
-interface Context {
+type Context = {
   isAuthenticated: Boolean;
   handleAuthentication: () => void;
-}
+};
 
 const AppContext = createContext<Context>({
   isAuthenticated: false,
