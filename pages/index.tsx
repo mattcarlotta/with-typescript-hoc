@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Head from "next/head";
 import withAuthentication from "../components/withAuthentication";
+import type { NextPage } from "next";
 
-const IndexPage = () => (
+const IndexPage: NextPage = () => (
   <>
     <Head>
       <title> Dashboard - Next App</title>

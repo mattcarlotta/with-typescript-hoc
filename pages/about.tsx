@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
 import withAuthentication from "../components/withAuthentication";
+import type { NextPage } from "next";
 
-const AboutPage = () => (
+const AboutPage: NextPage = () => (
   <>
     <Head>
       <title> About - Next App</title>

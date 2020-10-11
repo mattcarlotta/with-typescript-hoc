@@ -2,9 +2,9 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useAppContext } from "../components/AppContext";
-import type { FC } from "react";
+import type { NextPage } from "next";
 
-const Login: FC = () => {
+const Login: NextPage = () => {
   const { isAuthenticated, handleAuthentication } = useAppContext();
   const router = useRouter();
 
